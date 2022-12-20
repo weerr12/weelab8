@@ -1,10 +1,15 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 char before(char x){
-	//Write your function definition here
+    if(x>'A' and x<='Z'){
+        return x-1;
+    }else if(x=='A'){
+        return 'Z';
+    }else{
+        return 48;
+    }
 }
-
 int main(){
 	//Test Case
 	cout << before('A') << "\n";
